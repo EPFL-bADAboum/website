@@ -2,13 +2,22 @@
 layout: page
 title: About
 permalink: /about/
-feature-img: "assets/img/pexels/travel.jpeg"
-tags: [Page]
+feature-img: "assets/img/explosion.jpg"
 ---
 
-Type on Strap is based on Type Theme, a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+This is bADAboum team's datastory. We are here to present to you explosive results about our research: The Academy Awards. 
 
-Head over to the [theme's documentation](https://github.com/sylhare/Type-on-Strap) for much more information about Type on Strap or to install this theme on your own Jekyll site.
+Team members:
 
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
+Camille Lannoye: Producer
+
+Matya Aydin: The Pixar Lamp
+
+Quentin Sandoz: Maria Brbić's Stuntman
+
+Sophia Kovalenko: Artistic director
+
+Yoann Lafore: 
+
  
+Created for the CS-401 course, Applied Data Analysis (ADA)
