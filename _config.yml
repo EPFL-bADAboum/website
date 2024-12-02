@@ -9,7 +9,7 @@ avatar: assets/img/statue.jpg                       # Empty for no avatar in nav
 favicon: assets/img/statue.jpg                         # Icon displayed in the tab
 
 # Header and footer text
-header_text: Oscars or flOpscars  # Change Blog header text
+header_text: Oscars              or flOpscars  # Change Blog header text
 header_feature_image: assets/img/golden_statue.png
 header_feature_image_responsive: true
 footer_text: >
