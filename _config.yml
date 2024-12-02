@@ -10,7 +10,7 @@ favicon: assets/img/statue.jpg                         # Icon displayed in the t
 
 # Header and footer text
 header_text: Oscars or flOpscars  # Change Blog header text
-header_feature_image: assets/img/header/golden_statue.png
+header_feature_image: assets/img/golden_statue.png
 header_feature_image_responsive: true
 footer_text: >
   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
