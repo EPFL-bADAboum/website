@@ -3,13 +3,13 @@
 url: ""
 
 # THEME-SPECIFIC CONFIGURATION
-title: bADAboum                             # site's title
+title: bADAboum team                             # site's title
 description: "Do the Academy Awards Reflect Audience Taste?"      # used by search engines
 avatar: assets/img/statue.jpg                       # Empty for no avatar in navbar
 favicon: assets/img/statue.jpg                         # Icon displayed in the tab
 
 # Header and footer text
-header_text: Oscars              or flOpscars  # Change Blog header text
+header_text: Oscars or flOpscars  # Change Blog header text
 header_feature_image: assets/img/golden_statue.png
 header_feature_image_responsive: true
 footer_text: >
