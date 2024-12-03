@@ -2,6 +2,7 @@
 layout: page
 title: Oscars of FlOpscars
 feature-img: "assets/img/golden_statue.png"
+hide: true
 ---
 
 # Do the Academy Awards Reflect Audience Taste? Oscar's winners vs user's ratings

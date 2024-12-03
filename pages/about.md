@@ -13,9 +13,9 @@ Camille Lannoye: Producer
 
 Matya Aydin: The Pixar Lamp
 
-Quentin Sandoz: Maria Brbić's Stuntman
+Quentin Sandoz: Prof. Maria Brbić's Stuntman
 
-Sophia Kovalenko: Artistic director
+Sophia Kovalenko: Prof. Maria Brbić's Make-Up Artist
 
 Yoann Lafore: 
 
