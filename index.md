@@ -9,7 +9,15 @@ hide: true
 
 Are you sad that your favorite movie did not win an Oscar? 
 
->"But it had a very high rating among users, why did this random movie win?"
+<div class="quote-container">
+    <div class="quote-bubble">
+        “But it had a very high rating among users, why did this other random movie win?”
+        <div class="quote-tail"></div>
+    </div>
+    <img src="assets/img/person.png" alt="Person saying the quote" class="quote-image">
+</div>
+
+<!--"But it had a very high rating among users, why did this other random movie win?"-->
 
 Look no further! ADA can help us investigate. 
 
@@ -71,6 +79,31 @@ In this story, we will see if there is a big difference between the people's rat
 
 * * *
 
+## Are there discernible biases within Oscar winners, such as genre, nationality, or star power, that differ from audience preferences? (Q6)
+
+We know that the Academy Awards are USA-centric. 
+
+### What does it take to be nominated as best picture?
+
+* * *
+
+## Is there a correlation between high-profile actors/directors and Oscar wins, regardless of ratings? (Q3)
+
+<div class="quote-container">
+    <div class="quote-bubble">
+        "OMG Steven Spielberg directed this movie, it must be a nice one!"
+        <div class="quote-tail"></div>
+    </div>
+    <img src="assets/img/person.png" alt="Person saying the quote" class="quote-image">
+</div>
+
+
+Do you really need to make a great movie if Leonardo Di Caprio plays in it? Or if Quentin Tarantino directed it? Let's see if the jury is biased towards some members!
+
+
+* * *
+
+
 ## How do ratings of Oscar-winning films evolve over time? (Q2)
 
 Does a winner movie age well, like your favourite wine, with the audience?
@@ -83,14 +116,6 @@ To obtain the data and the sentiment of the reviews, we have scraped the IMDB re
 
 We then performed a sentiment analysis on those using the library *vader*. 
 
-
-* * *
-
-## Is there a correlation between high-profile actors/directors and Oscar wins, regardless of ratings? (Q3)
-
-Do you really need to make a great movie if Leonardo Di Caprio plays in it? Or if Quentin Tarantino directed it? Let's see if the jury is biased towards some members!
-
-
 * * *
 
 ## Does winning an Oscar lead to a measurable increase in ratings or review counts (i.e., the "Oscar bump")? (Q5)
@@ -101,11 +126,7 @@ How does winning an Oscar affect the perceiveness of a movie?
 
 Does the overall sentiment improves after the winning, are people two-faced and start to like a movie only because it won an Oscar?
 
-* * *
 
-## Are there discernible biases within Oscar winners, such as genre, nationality, or star power, that differ from audience preferences? (Q6)
-
-We know that the Academy Awards are USA-centric. 
 
 * * *
 

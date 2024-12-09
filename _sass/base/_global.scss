@@ -3,9 +3,49 @@
   padding: 0;
   box-sizing: border-box;
 }
+.post-content {
+  text-align: justify;
+}
+.quote-container {
+  display: flex;
+  align-items: flex-start; /* Start alignment for the main flexbox */
+  margin: 20px 0;
+  position: relative; /* Allows for fine control of image placement */
+  gap: 0px;
+}
 
-figure {
-  margin: 0;
+.quote-image {
+  width: 100px;
+  height: 100px;
+  margin-left: 0px; /* Spacing between bubble and image */
+  width: auto;
+  align-self: flex-end; /* Forces the image to align at the bottom */
+  visibility: visible;
+  position: relative;
+  transform: scaleX(-1);
+}
+
+.quote-bubble {
+  background-color: #8d7905; /* Bubble color */
+  color: white;
+  padding: 15px 20px;
+  border-radius: 15px; /* Rounded corners */
+  position: relative; /* Allows positioning of the tail */
+  //max-width: 1000px; /* Limit width for readability */
+  line-height: 1.5; /* Improve text spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+  margin-left: 100px;
+}
+
+.quote-tail {
+  position: absolute;
+  bottom: 5px; /* Align with the bottom of the bubble */
+  right: -5px; /* Position the tail on the right */
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 10px; /* Triangle shape pointing right */
+  border-color: transparent transparent transparent #8d7905; /* Match bubble color */
 }
 
 html {
