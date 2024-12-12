@@ -54,6 +54,11 @@ Well, let's find out !
 But before going deep into the analysis, let's start simple, let's see how the ratings are distributed between oscar winners and nominees.
 Interesting, we see that the winners seems to have a higher ratings. 
 
+<div>
+  {% include question1/boxplot.html}
+</div>
+
+
 <div class="quote-container">
     <div class="quote-bubble">
         “Nice ! So we are done, winning an oscar will get you to the top !”
