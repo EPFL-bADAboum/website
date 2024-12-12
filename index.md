@@ -49,6 +49,32 @@ In this story, we will see if there is a big difference between the people's rat
 
 ## Do Oscar-winning films generally have higher ratings compared to non-winning nominees and top box-office hits?  (Q1)
 
+So, do you think that if your favorite movie gets an oscar, it will get to the top ratings ? 
+Well, let's find out !
+But before going deep into the analysis, let's start simple, let's see how the ratings are distributed between oscar winners and nominees.
+Interesting, we see that the winners seems to have a higher ratings. 
+
+<div class="quote-container">
+    <div class="quote-bubble">
+        “Nice ! So we are done, winning an oscar will get you to the top !”
+        <div class="quote-tail"></div>
+    </div>
+    <img src="assets/img/person.png" alt="Person saying the quote" class="quote-image">
+</div>
+
+Well well, not that fast. While those results are encouraging, we still need to see if they are significant !
+
+<div class="quote-container">
+    <div class="quote-bubble">
+        “But how ?”
+        <div class="quote-tail"></div>
+    </div>
+    <img src="assets/img/person.png" alt="Person saying the quote" class="quote-image">
+</div>
+
+To do so, we'll use a simple t-test and see if the distribution are different. What's a t-test you ask ? Well, go check in our goldbook of statistical tools (*Put ref here*).
+
+
 
 <h3>Interactive Plot example</h3>
 
