@@ -55,7 +55,7 @@ But before going deep into the analysis, let's start simple, let's see how the r
 Interesting, we see that the winners seems to have a higher ratings. 
 
 <div>
-  {% include question1/boxplot.html}
+  {% include question1/boxplot.html %}
 </div>
 
 
