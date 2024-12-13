@@ -80,3 +80,9 @@ What does this mean in practical terms? It implies that, on average, for every $
 <!-- Oscaro: Oh, I see! So the more popular the movie, the better its ratings. Fair enough. -->
 
 Exactly! A possible explanation could be that higher-quality movies tend to receive better ratings, which attract more viewers, ultimately leading to a higher number of votes.
+
+### Final Influence of Winning an Oscar
+
+With a better understanding of potential biases, we can now assess the impact of winning an Oscar on a movie's average rating. We perform an OLS regression using the winner/nominee status as a categorical variable, along with the movie's release year and number of votes as additional predictors.
+
+The regression yields a coefficient of $0.2144$ for winning an Oscar, with a nearly null p-value, indicating strong statistical significance. This suggests that, on average, winning an Oscar in any category increases a movie's average rating by approximately $0.21$ rating points.
