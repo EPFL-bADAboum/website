@@ -62,3 +62,21 @@ The OLS regression yields a coefficient of $0.0085 \pm 0.001$ with a p-value of 
 A possible explanation for this trend is that IMDb ratings are relatively recent, with the official website launching in 1990. As a result, the majority of users providing ratings may be more familiar with or emotionally connected to movies released closer to their own time, potentially leading to higher ratings for more recent films.
 
 <!-- Oscaro: Interesting, we need to take that into account ! -->
+
+### Popularity Influence
+
+Another key factor to consider is a movie's popularity, specifically its number of votes. Popular movies are likely to receive higher ratings due to broader exposure and greater audience engagement.
+
+<div>
+  {% include question1/scatter_numVotes_vs_averageRating.html %}
+</div>
+
+By using a logarithmic scale, we observe that the number of votes and average ratings appear to be correlated in a non-linear way. To verify this relationship, we compute the Spearman correlation, yielding a value of approximately $59.4\%$, supporting the existence of a non-linear association.
+
+To quantify this relationship, we perform an OLS regression of average ratings on the logarithm of the number of votes. The regression yields a coefficient of $0.1826$ with an almost null p-value, indicating statistical significance.
+
+What does this mean in practical terms? It implies that, on average, for every $1\%$ increase in the number of votes, a movie's average rating increases by approximately $0.0018$ units.
+
+<!-- Oscaro: Oh, I see! So the more popular the movie, the better its ratings. Fair enough. -->
+
+Exactly! A possible explanation could be that higher-quality movies tend to receive better ratings, which attract more viewers, ultimately leading to a higher number of votes.
