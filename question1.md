@@ -17,8 +17,9 @@ Interesting, we see that the winners seems to have a higher ratings.
 Well well, not that fast. While those results are encouraging, we still need to see if they are significant !
 To do so, we'll use a simple t-test and see if the distribution are different. What's a t-test you ask ? 
 Well, go check in our goldbook of statistical tools (*Put ref here*).
+<!-- On peut éventuellement faire ue sorte de "libre d'or" de nos méthodes stats, mais à voir avec les autres -->
 
-Running our t-test, we get a p-value less that $1\cdot10^{-47}$.
+Running our t-test, we get a p-value less than $1\cdot10^{-47}$.
 This is very small and indeed indicates that the distributions are statistically different.
 Thus, winning an oscar makes an impact !
 
@@ -30,7 +31,7 @@ But first, let's be a little careful.
 
 <!-- Oscaro: Why ? -->
 
-Well, you see, humans are very complex and they might not treat all movies the same way, they might be biased.
+Well, you see, humans are very complex creatures and they might not treat all movies the same way, they might be biased.
 For instance, maybe that they have nostalgia for older movies and that they will naturally judge them less severly than todays movies (and vice-versa).
 Also, not all movies are popular and the number of votes mights influence the ratings. 
 We must take that into account.
