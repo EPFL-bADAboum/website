@@ -140,3 +140,14 @@ These insights suggest that audiences seem to value the sensory aspects of movie
 On a side note, we still lack enough samples to estimate a robust causal effect for the Best Picture category. This is because Best Picture wins are rarely standalone and are often accompanied by wins in other categories. Due to our pipeline’s restrictions, we cannot compute a meaningful effect for these cases.
 
 <!-- Oscaro: Interesting. I guess we'll have to further analyze the *Best Picture* category then! -->
+
+
+### Ratings and Number of Oscars
+
+Let’s explore the relationship between the number of Oscars won and average ratings. Intuitively, winning more Oscars should correlate with higher ratings. Let's check  that.
+<div> {% include question1/nb_oscars_boxplot.html %} </div>
+
+As expected, the results confirm this trend: movies with more Oscars tend to have higher average ratings.
+
+An interesting observation is that only one movie has ever won 11 Oscars—Titanic, which still holds the record for the most Oscars won by a single film.
+<!-- Oscaro: Yeah, I remember that movie—I cried so much! -->
