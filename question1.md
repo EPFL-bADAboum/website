@@ -86,3 +86,41 @@ Exactly! A possible explanation could be that higher-quality movies tend to rece
 With a better understanding of potential biases, we can now assess the impact of winning an Oscar on a movie's average rating. We perform an OLS regression using the winner/nominee status as a categorical variable, along with the movie's release year and number of votes as additional predictors.
 
 The regression yields a coefficient of $0.2144$ for winning an Oscar, with a nearly null p-value, indicating strong statistical significance. This suggests that, on average, winning an Oscar in any category increases a movie's average rating by approximately $0.21$ rating points.
+
+
+### Causal effect per category
+
+Not all Oscar categories carry the same weight. Winning in Special Effects or Actor, for instance, likely has a different impact on average ratings.
+<!-- Oscaro: That's right, I have so many categories. How are we going to figure that out? -->
+
+Let’s start simple and see if we can extract meaningful insights. Our approach is as follows: for each category, we construct a bipartite graph connecting nominees (control group) and winners (treated group). We link nominees and winners if their movies were released in the same year. Each edge is weighted by the difference in the number of votes. We then find pairings that minimize the vote difference, allowing us to estimate a meaningful causal effect.
+<!-- Oscaro: That’s it? -->
+
+Not quite. A few additional considerations are essential:
+
+- To ensure robust results, we require a minimum of 10 pairs per category.
+- If a movie wins an Oscar in one category but is only nominated in another, we exclude it from the nominee group to avoid bias.
+- To isolate the effect of winning a single Oscar in one category, we remove movies that have won multiple Oscars.
+
+With these constraints, we narrow down to a select few categories where causal effects can be reliably calculated.
+<div> {% include question1/raw_causal_effects_bar.html %} </div>
+
+Despite these limitations, the results are already revealing. For example, winning an Oscar in Special Effects appears to have the largest impact on average ratings, with an Average Treatment Effect (ATE) of approximately $0.53$.
+<!-- Oscaro: Hmm, that’s nice, but couldn’t we do better? I have multiple categories that are quite similar. Couldn’t we group them to get more data? -->
+
+Great idea! Our dataset contains 59 categories with at least 10 entries, and some of them are indeed similar. For example, we could group the Actor and Actress categories under a broader Acting category. By pooling data, we could compute more robust causal effects.
+
+To achieve this, we apply the k-means algorithm. First, we embed the categories into vectors and then perform clustering. Given the relatively small sample size (59), we manually select the optimal number of clusters, determining it to be $k_{optimal} = 12$.
+
+While k-means provides a strong foundation, some adjustments are needed. Thanks to the small number of samples, we fine-tune the clusters through manual inspection to ensure the clusters are coherent.
+<!-- Oscaro: That sounds great! But how can I check if the groups are good visually? -->
+
+Good question! We visualize the clusters by reducing the embedded vectors to two or three dimensions using Principal Component Analysis (PCA). This allows us to see how well the categories group together.
+
+Here’s a 2D visualization of the clusters:
+<div> {% include question1/clusters_2d.html %} </div>
+
+And here’s the same visualization in 3D:
+<div> {% include question1/clusters_3d.html %} </div>
+
+It’s worth noting that clusters might look scrambled in these graphs. This is because k-means clustering was performed in the higher-dimensional space, and dimensionality reduction can distort the visual representation. Rest assured, the clusters remain valid in their original space.
