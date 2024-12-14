@@ -108,6 +108,8 @@ With these constraints, we narrow down to a select few categories where causal e
 Despite these limitations, the results are already revealing. For example, winning an Oscar in Special Effects appears to have the largest impact on average ratings, with an Average Treatment Effect (ATE) of approximately $0.53$.
 <!-- Oscaro: Hmm, that’s nice, but couldn’t we do better? I have multiple categories that are quite similar. Couldn’t we group them to get more data? -->
 
+### Clustering the categories
+
 Great idea! Our dataset contains 59 categories with at least 10 entries, and some of them are indeed similar. For example, we could group the Actor and Actress categories under a broader Acting category. By pooling data, we could compute more robust causal effects.
 
 To achieve this, we apply the k-means algorithm. First, we embed the categories into vectors and then perform clustering. Given the relatively small sample size (59), we manually select the optimal number of clusters, determining it to be $k_{optimal} = 12$.
@@ -124,3 +126,17 @@ And here’s the same visualization in 3D:
 <div> {% include question1/clusters_3d.html %} </div>
 
 It’s worth noting that clusters might look scrambled in these graphs. This is because k-means clustering was performed in the higher-dimensional space, and dimensionality reduction can distort the visual representation. Rest assured, the clusters remain valid in their original space.
+
+
+### Causal effect per category - revisited
+
+With broader categories established, we can perform a similar causal analysis. Here are the updated results:
+<div> {% include question1/new_causal_effects_bar.html %} </div>
+
+As expected, Effects remains the most influential category, consistent with our previous findings. Interestingly, we now see that Cinematography and Sound also have a notable impact on average ratings. While Writing has a positive effect, its influence is nearly half that of the top categories.
+
+These insights suggest that audiences seem to value the sensory aspects of movies (visual and sound effects) more than the story itself.
+
+On a side note, we still lack enough samples to estimate a robust causal effect for the Best Picture category. This is because Best Picture wins are rarely standalone and are often accompanied by wins in other categories. Due to our pipeline’s restrictions, we cannot compute a meaningful effect for these cases.
+
+<!-- Oscaro: Interesting. I guess we'll have to further analyze the *Best Picture* category then! -->
