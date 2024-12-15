@@ -16,7 +16,7 @@ Interesting, we see that the winners seems to have a higher ratings.
         “Nice ! So we are done, winning me will get you to the top !”
         <div class="quote-tail"></div>
     </div>
-    <img src="../assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
 
@@ -35,7 +35,7 @@ Thus, winning an oscar makes an impact !
         “I knew it !”
         <div class="quote-tail"></div>
     </div>
-    <img src="../assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
 
@@ -49,7 +49,7 @@ But first, let's be a little careful.
         “Why ?”
         <div class="quote-tail"></div>
     </div>
-    <img src="../assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
 Well, you see, humans are very complex creatures and they might not treat all movies the same way, they might be biased.
@@ -63,7 +63,7 @@ We must take that into account.
         “Are you sure about that ? Bring me proofs !”
         <div class="quote-tail"></div>
     </div>
-    <img src="../assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
 You're right to ask, let's check our data !
@@ -102,7 +102,7 @@ A possible explanation for this trend is that IMDb ratings are relatively recent
         “Interesting, we need to take that into account !”
         <div class="quote-tail"></div>
     </div>
-    <img src="../assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
 <hr>
@@ -129,7 +129,7 @@ What does this mean in practical terms? It implies that, on average, for every \
         “Oh, I see! So the more popular the movie, the better its ratings. Fair enough.”
         <div class="quote-tail"></div>
     </div>
-    <img src="../assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
 Exactly! A possible explanation could be that higher-quality movies tend to receive better ratings, which attract more viewers, ultimately leading to a higher number of votes.
@@ -161,7 +161,7 @@ An interesting observation is that only one movie has ever won 11 Oscars—Titan
         “Yeah, I remember that movie... I cried so much !”
         <div class="quote-tail"></div>
     </div>
-    <img src="../assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
 <hr>
@@ -175,7 +175,7 @@ Not all Oscar categories carry the same weight. Winning in Special Effects or Ac
         “That's right, I have so many categories. How are we going to figure that out ?”
         <div class="quote-tail"></div>
     </div>
-    <img src="../assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
 Let’s start simple and see if we can extract meaningful insights. Our approach is as follows: for each category, we construct a bipartite graph connecting nominees (control group) and winners (treated group). We link nominees and winners if their movies were released in the same year. Each edge is weighted by the difference in the number of votes. We then find pairings that minimize the vote difference, allowing us to estimate a meaningful causal effect.
@@ -185,7 +185,7 @@ Let’s start simple and see if we can extract meaningful insights. Our approach
         “That's it?”
         <div class="quote-tail"></div>
     </div>
-    <img src="../assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
 Not quite. A few additional considerations are essential:
@@ -207,7 +207,7 @@ Despite these limitations, the results are already revealing. For example, winni
         “Hmm, that’s nice, but couldn’t we do better? I have multiple categories that are quite similar. Couldn’t we group them to get more data ?”
         <div class="quote-tail"></div>
     </div>
-    <img src="../assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
 <hr>
@@ -225,7 +225,7 @@ While k-means provides a strong foundation, some adjustments are needed. Thanks 
         “That sounds great ! But how can I check if the groups are good visually ?”
         <div class="quote-tail"></div>
     </div>
-    <img src="../assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
 Good question! We visualize the clusters by reducing the embedded vectors to two or three dimensions using Principal Component Analysis (PCA). This allows us to see how well the categories group together.
@@ -268,6 +268,6 @@ On a side note, we still lack enough samples to estimate a robust causal effect 
         “Interesting. I guess we'll have to further analyze the *Best Picture* category then!”
         <div class="quote-tail"></div>
     </div>
-    <img src="../assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
