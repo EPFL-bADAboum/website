@@ -3,13 +3,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+.plot-container {
+  width: 70%;              /* Adjust the width as needed */
+  margin: 20px auto; 
+}
+.side-by-side-plots {
+  display: flex;
+  justify-content: space-between;  /* Distribute space between the plots */
+  gap: 220px;  /* Optional: Add space between the plots */
+}
+
+.side-by-side-plots .plot-container {
+  width: 40%;   /* Adjust the width of each plot container */
+  margin-left: -80px;  /* Optional: Add margin around each plot container */
+}
 
 .post-content {
   text-align: justify;
 }
 .quote-container {
   display: flex;
-  align-items: flex-start; /* Start alignment for the main flexbox */
+  align-items: flex-start; /* end alignment for the main flexbox */
+  justify-content: flex-end;
   margin: 20px 0;
   position: relative; /* Allows for fine control of image placement */
   gap: 0px;
@@ -22,7 +37,8 @@
   width: auto;
   align-self: flex-end; /* Forces the image to align at the bottom */
   visibility: visible;
-  position: relative;
+  position: absolute;
+  right: -220px;
   transform: scaleX(-1);
 }
 
@@ -32,10 +48,12 @@
   padding: 15px 20px;
   border-radius: 15px; /* Rounded corners */
   position: relative; /* Allows positioning of the tail */
+  right: 80px;
   //max-width: 1000px; /* Limit width for readability */
   line-height: 1.5; /* Improve text spacing */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
   margin-left: 100px;
+  justify-content: flex-end;
 }
 
 .quote-tail {

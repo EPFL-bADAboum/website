@@ -17,7 +17,6 @@ Are you sad that your favorite movie did not win an Oscar?
     <img src="assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
-<!--"But it had a very high rating among users, why did this other random movie win?"-->
 
 Look no further! ADA can help us investigate. 
 
@@ -47,35 +46,11 @@ In this story, we will see if there is a big difference between the people's rat
 
 * * *
 
-## Do Oscar-winning films generally have higher ratings compared to non-winning nominees and top box-office hits?  (Q1)
+## Do Oscar-winning films generally have higher ratings compared to non-winning nominees and top box-office hits?
 
-
-<h3>Interactive Plot example</h3>
-
-<div id="plotly-chart"></div>
-
-<script type="text/javascript">
-  var trace1 = {
-    x: [1, 2, 3, 4],
-    y: [10, 11, 12, 13],
-    mode: 'lines',
-    name: 'Test Line'
-  };
-
-  var data = [trace1];
-
-  var layout = {
-    title: 'Simple Plotly Example',
-    xaxis: {
-      title: 'X Axis'
-    },
-    yaxis: {
-      title: 'Y Axis'
-    }
-  };
-
-  Plotly.newPlot('plotly-chart', data, layout);
-</script>
+<div>
+  {% include question1.md %}
+</div>
 
 * * *
 
