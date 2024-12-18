@@ -29,17 +29,14 @@ Fun fact: The origin of the name is disputed but the most famous story is the on
 
 So it might actually be your favorite uncle Oscar...
 
-Each year, several movies are nominated by the voters in each branch. But in the end, only one movie wins the golden statuette in each category.
 
 ### Who votes?
-They are voted by the Academy's voting membership. This membership is divided into different branches. Each branch represents a different discipline in film production. Thus actors vote for actors, directors for directors and so on. 
+They are voted by the Academy's Voting Membership. This membership is divided into different branches. Each branch represents a different discipline in film production.
 
-<!--Maybe cite an award ceremony where nobody understood why a movie won and say that ADA can help us investigate → Nomadland (imo (soph) il était nul), maybe also cite some nominated movies that were not liked (like Once upon a time in Hollywood or why The Grand Budapest Hotel didn’t win in 2015 or like why Barbie didn’t win against Oppenheimer)
+Every year, several movies are nominated by the voters in each branch. Thus actors nominate for actors, directors for directors and so on. But in the end, only one movie wins the golden statuette in each category. However, the Best Picture category is the most general one, as every member nominates their favorite movies.
 
-Explain what the Academy awards are, fun fact about uncle oscar
+All active members in the Academy can vote for all of the categories. They must rank the nominated movies in their preferential order. The movie that gets 50 percent or more of the votes is the winner.
 
-Explain nominees vs winners
--->
 
 
 In this story, we will see if there is a big difference between the people's ratings and Oscar awards. We will also see if there is a recipe to success among the Academy Awards.
@@ -55,6 +52,10 @@ In this story, we will see if there is a big difference between the people's rat
 * * *
 
 ## Are there discernible biases within Oscar winners, such as genre, nationality, or star power, that differ from audience preferences? (Q6)
+
+However as we have seen in the introduction, the nomination and voting is done by the same members. Thus the critic's bias may already be in the nomination. We will now compare the nominated movies with movies that were not.
+
+<br>
 
 We know that the Academy Awards are USA-centric. 
 
@@ -75,36 +76,35 @@ We know that the Academy Awards are USA-centric.
 
 Do you really need to make a great movie if Leonardo Di Caprio plays in it? Or if Quentin Tarantino directed it? Let's see if the jury is biased towards some members!
 
-
 * * *
 
+## Does winning an Oscar lead to a measurable increase in ratings or review counts (i.e., the "Oscar bump")? 
+<div class="quote-container">
+    <div class="quote-bubble">
+        "I'm sure that people only like a movie because it won an Oscar!"
+        <div class="quote-tail"></div>
+    </div>
+    <img src="assets/img/person.png" alt="Person saying the quote" class="quote-image">
+</div>
 
-## How do ratings of Oscar-winning films evolve over time? (Q2)
+Well my friend, let's see.
+
+<div>
+  {% include question5.md %}
+</div>
+
+<hr>
+
+
+<h2> How do ratings of Oscar-winning films evolve over time? (Q2) </h2>
 
 Does a winner movie age well, like your favourite wine, with the audience?
 
 We will see how the sentiment of the reviews evolves over the time.
 
-### Data collection
 
-To obtain the data and the sentiment of the reviews, we have scraped the IMDB reviews of each movie nominated to the Oscars in the category Best Picture. 
+<hr>
 
-We then performed a sentiment analysis on those using the library *vader*. 
-
-* * *
-
-## Does winning an Oscar lead to a measurable increase in ratings or review counts (i.e., the "Oscar bump")? (Q5)
-
-Have you ever heard of the Oscar bump? It is the increase of the box office performance that a film experiences after receiving an Oscar. 
-
-How does winning an Oscar affect the perceiveness of a movie?
-
-Does the overall sentiment improves after the winning, are people two-faced and start to like a movie only because it won an Oscar?
-
-
-
-* * *
-
-## Conclusion
+<h2> Conclusion </h2>
 
 

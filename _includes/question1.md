@@ -156,6 +156,16 @@ As expected, the results confirm this trend: movies with more Oscars tend to hav
 
 An interesting observation is that only one movie has ever won 11 Oscars—Titanic, which still holds the record for the most Oscars won by a single film.
 
+<div style="width: 100%; display: flex; justify-content: center; margin-top: 20px; margin-bottom: -10px; padding: 0;">
+  <iframe 
+    src="{{ site.baseurl }}/assets/img/titanic.png" 
+    style="width: 100%; max-width: 800px; height: 500px; border: none; margin: 0; padding: 0;"
+    scrolling="no">
+    Your browser does not support PNGs. 
+    <a href="{{ site.baseurl }}/assets/img/titanix.png">Download the PNG</a>.
+  </iframe>
+</div>
+
 <div class="quote-container">
     <div class="quote-bubble">
         “Yeah, I remember that movie... I cried so much !”
@@ -218,6 +228,8 @@ Great idea! Our dataset contains 59 categories with at least 10 entries, and som
 
 To achieve this, we apply the k-means algorithm. First, we embed the categories into vectors and then perform clustering. Given the relatively small sample size (59), we manually select the optimal number of clusters, determining it to be \(k_{optimal} = 12\).
 
+<br>
+
 While k-means provides a strong foundation, some adjustments are needed. Thanks to the small number of samples, we fine-tune the clusters through manual inspection to ensure the clusters are coherent.
 
 <div class="quote-container">
@@ -229,6 +241,8 @@ While k-means provides a strong foundation, some adjustments are needed. Thanks 
 </div>
 
 Good question! We visualize the clusters by reducing the embedded vectors to two or three dimensions using Principal Component Analysis (PCA). This allows us to see how well the categories group together.
+
+<br>
 
 Here’s a 2D and 3D visualization of the clusters:
 
@@ -270,4 +284,3 @@ On a side note, we still lack enough samples to estimate a robust causal effect 
     </div>
     <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
-

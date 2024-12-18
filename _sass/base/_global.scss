@@ -10,7 +10,7 @@
 .side-by-side-plots {
   display: flex;
   justify-content: space-between;  /* Distribute space between the plots */
-  gap: 220px;  /* Optional: Add space between the plots */
+  gap: 250px;  /* Optional: Add space between the plots */
 }
 
 .side-by-side-plots .plot-container {
@@ -48,7 +48,7 @@
   padding: 15px 20px;
   border-radius: 15px; /* Rounded corners */
   position: relative; /* Allows positioning of the tail */
-  right: 80px;
+  right: 10px;
   //max-width: 1000px; /* Limit width for readability */
   line-height: 1.5; /* Improve text spacing */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
