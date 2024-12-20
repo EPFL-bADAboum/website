@@ -103,7 +103,7 @@ Another key factor to consider is a movie's popularity, specifically its number 
   {% include question1/scatter_numVotes_vs_averageRating.html %}
 </div>
 
-By using a logarithmic scale, we observe that the number of votes and average ratings appear to be correlated in a non-linear way. To verify this relationship, we compute the Spearman correlation, yielding a value of approximately \(59.4\%\), supporting the existence of a non-linear association.
+By using a logarithmic scale, we observe that the number of votes and average ratings appear to be correlated in a non-linear way. To verify this relationship, we compute the Pearson and Spearman correlation. This respectively yield the values of approximately \(43.0\%\) and \(59.4\%\). We notice that the Spearman correlation is greater than the Pearson one indicating that the relationship between the number of votes and average ratings is indeed likely non-linear.
 
 To quantify this relationship, we perform an OLS regression of average ratings on the logarithm of the number of votes. The regression yields a coefficient of \(0.1826\) with an almost null p-value, indicating statistical significance.
 
