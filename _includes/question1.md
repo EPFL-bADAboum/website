@@ -18,7 +18,7 @@ Interesting, we see that the winners seems to have a higher ratings.
 
 Well well, not that fast. While those results are encouraging, we still need to see if they are significant !
 To do so, we'll use a simple t-test and see if the distribution are different. What's a t-test you ask ?
-Well, go check in our <a href="/goldbook">Goldbook of Statistical Tools</a>.
+Well, go check in our <a href="/website/goldbook/">Goldbook of Statistical Tools</a>.
 
 <!-- On peut éventuellement faire ue sorte de "libre d'or" de nos méthodes stats, mais à voir avec les autres -->
 
