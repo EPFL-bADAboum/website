@@ -13,7 +13,7 @@ permalink: /goldbook/
     This allows to measure the linear relationship between two continuous variables. It ranges from -1 to 1, and indicates the direction and strength of the association.
   </div>
   <div class="stat-image">
-    <img src="/assets/img/goldbook/pearson_correlation.png" alt="Pearson Correlation Example">
+    <img src="{{ site.baseurl }}/assets/img/goldbook/pearson_correlation.png" alt="Pearson Correlation Example">
     <figcaption>[Example of Pearson correlations](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)</figcaption>
   </div>
 </div>
@@ -25,7 +25,7 @@ permalink: /goldbook/
     It measures how well two variables are related by ranking their values. If one variable consistently increases or decreases as the other changes, they have a strong Spearman correlation. It works even if the relationship is not linear, making it useful when data isn’t normally distributed or has outliers. This makes this tool particularly useful when we suspect a non-linear relationship.
   </div>
   <div class="stat-image">
-    <img src="/assets/img/goldbook/spearman_correlation.png" alt="Spearman Correlation Example">
+    <img src="{{ site.baseurl }}/assets/img/goldbook/spearman_correlation.png" alt="Spearman Correlation Example">
     <figcaption>[Spearman vs Pearson correlation](https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient)</figcaption>
   </div>
 </div>
@@ -45,7 +45,7 @@ permalink: /goldbook/
     The Kolmogorov-Smirnov (KS) test compares two datasets to see if they come from the same distribution. It looks at the biggest difference between their cumulative distributions. If this difference is large, the test suggests the datasets are from different populations. The KS test works with any type of continuous data and doesn’t assume a specific distribution. This makes it useful for checking the conformity of our data.
   </div>
   <div class="stat-image">
-    <img src="/assets/img/goldbook/kolmogorov_smirnov.png" alt="Kolmogorov-Smirnov Test Example">
+    <img src="{{ site.baseurl }}/assets/img/goldbook/kolmogorov_smirnov.png" alt="Kolmogorov-Smirnov Test Example">
     <figcaption>[Two-sample KS statistic: red and blue lines are empirical distributions; black arrow shows the KS value.](https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test)</figcaption>
   </div>
 </div>
@@ -73,7 +73,7 @@ permalink: /goldbook/
     Logistic regression predicts binary outcomes (e.g., success/failure) instead of continuous values like OLS. It estimates the probability of an event using a logistic curve, producing results between 0 and 1. It is very useful for classification tasks.
   </div>
   <div class="stat-image">
-    <img src="/assets/img/goldbook/logistic_regression.png" alt="Logistic Regression Example">
+    <img src="{{ site.baseurl }}/assets/img/goldbook/logistic_regression.png" alt="Logistic Regression Example">
     <figcaption>[Example of logistic regression](https://fr.wikipedia.org/wiki/R%C3%A9gression_logistique)</figcaption>
   </div>
 </div>
