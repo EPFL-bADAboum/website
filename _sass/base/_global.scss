@@ -4,18 +4,18 @@
   box-sizing: border-box;
 }
 .plot-container {
-  width: 70%;              /* Adjust the width as needed */
-  margin: 20px auto; 
+  width: 70%; /* Adjust the width as needed */
+  margin: 20px auto;
 }
 .side-by-side-plots {
   display: flex;
-  justify-content: space-between;  /* Distribute space between the plots */
-  gap: 250px;  /* Optional: Add space between the plots */
+  justify-content: space-between; /* Distribute space between the plots */
+  gap: 250px; /* Optional: Add space between the plots */
 }
 
 .side-by-side-plots .plot-container {
-  width: 40%;   /* Adjust the width of each plot container */
-  margin-left: -80px;  /* Optional: Add margin around each plot container */
+  width: 40%; /* Adjust the width of each plot container */
+  margin-left: -80px; /* Optional: Add margin around each plot container */
 }
 
 .post-content {
@@ -67,6 +67,32 @@
   border-color: transparent transparent transparent #8d7905; /* Match bubble color */
 }
 
+.stat-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.stat-text {
+  flex: 1;
+  padding-right: 1em;
+}
+
+.stat-image {
+  text-align: center;
+}
+
+.stat-image img {
+  max-width: 300px;
+  height: auto;
+}
+
+.stat-image figcaption {
+  font-size: 0.85em;
+  color: #666;
+  margin-top: 0.5em;
+}
+
 html {
   background: var(--background);
 }
@@ -100,7 +126,6 @@ h6 {
   a {
     color: var(--text);
   }
-
 }
 
 h1 {
@@ -130,11 +155,11 @@ video {
   margin-right: auto;
 }
 
-img[align=left] {
+img[align="left"] {
   margin-right: 3%;
 }
 
-img[align=right] {
+img[align="right"] {
   margin-left: 3%;
 }
 
@@ -154,10 +179,15 @@ summary {
   h3 {
     font-size: 1em;
   }
-  h4, tr, th, .meta {
+  h4,
+  tr,
+  th,
+  .meta {
     font-size: 0.9em;
   }
-  p, li, td {
+  p,
+  li,
+  td {
     font-size: 0.8em;
   }
 
@@ -181,10 +211,15 @@ summary {
   h3 {
     font-size: 0.9em;
   }
-  h4, th, tr, .meta {
+  h4,
+  th,
+  tr,
+  .meta {
     font-size: 0.85em;
   }
-  p, li, td {
+  p,
+  li,
+  td {
     font-size: 0.8em;
   }
   li li {
@@ -287,10 +322,11 @@ kbd {
   background-color: #eee;
   border-radius: 3px;
   border: 1px solid #b4b4b4;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2),
+    0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
   color: #333;
   display: inline-block;
-  font-size: .85em;
+  font-size: 0.85em;
   font-weight: 700;
   line-height: 1;
   padding: 2px 4px;
@@ -328,7 +364,8 @@ details {
 }
 
 // Mermaid
-.mermaid, .language-mermaid {
+.mermaid,
+.language-mermaid {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 2%;
 
