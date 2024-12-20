@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Statistical GoldBook
+title: "Statistical GoldBook"
 permalink: /goldbook/
 ---
 
