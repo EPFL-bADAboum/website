@@ -225,17 +225,19 @@ Good question! We visualize the clusters by reducing the embedded vectors to two
 
 <br>
 
-Here’s a 2D and 3D visualization of the clusters:
+Here’s a 2D visualization of the clusters:
 
-<div class="side-by-side-plots">
-  <div class="plot-container">
-    {% include question1/clusters_2d.html %}
-  </div>
 
-  <div class="plot-container">
-    {% include question1/clusters_3d.html %}
-  </div>
+<div class="plot-container">
+{% include question1/clusters_2d.html %}
 </div>
+
+Here’s a 2D visualization of the clusters:
+
+<div class="plot-container">
+{% include question1/clusters_3d.html %}
+</div>
+
 
 It’s worth noting that clusters might look scrambled in these graphs. This is because k-means clustering was performed in the higher-dimensional space, and dimensionality reduction can distort the visual representation. Rest assured, the clusters remain valid in their original space.
 
