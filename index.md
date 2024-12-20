@@ -118,3 +118,14 @@ We will see how the sentiment of the reviews evolves over the time after the Osc
 <hr>
 
 <h2> Conclusion </h2>
+
+In this project, we have explorated the factors influencing the success of films in the Academy Awards, commonly known as the Oscars. 
+
+Oscaro and the bADAboum team wish you happy holidays!
+<div class="quote-container">
+    <div class="quote-bubble">
+        "Cheers !"
+        <div class="quote-tail"></div>
+    </div>
+    <img src="assets/img/person.png" alt="Person saying the quote" class="quote-image">
+</div>

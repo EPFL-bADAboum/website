@@ -40,7 +40,7 @@
 
 <div style="width: 100%; display: flex; justify-content: center; margin-top: 20px; margin-bottom: -10px; padding: 0;">
   <iframe 
-    src="{{ site.baseurl }}/question5_plots/Distribution_before_after.png" 
+    src="{{ site.baseurl }}/question6_plots/runtime.png" 
     style="width: 100%; max-width: 800px; height: 500px; border: none; margin: 0; padding: 0;"
     scrolling="no">
     Your browser does not support PNGs. 
