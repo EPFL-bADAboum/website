@@ -104,6 +104,7 @@ On average the Oscar-winning movies get an average rating of \(7.91\), while the
     <img src="assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
+<hr>
 
 <h3> Actors </h3>
 
@@ -175,6 +176,7 @@ This time, we get a p-value of \(0.066\). Despite being low, it showcases that t
 
 We were looking for a bias in the jury but instead, it seems like we found a bias in the audience!
 
+<hr>
 
 <h3> Bias towards nomination </h3>
 

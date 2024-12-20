@@ -103,12 +103,16 @@ Well my friend, let's see.
 <hr>
 
 
-<h2> How do ratings of Oscar-winning films evolve over time? (Q2) </h2>
+<h2> How do ratings of Oscar-winning films evolve over time? </h2>
 
 Does a winner movie age well, like your favourite wine, with the audience?
 
-We will see how the sentiment of the reviews evolves over the time.
+We will see how the sentiment of the reviews evolves over the time after the Oscar ceremony. Is there a noticeable "hype effect" surrounding the awards?
 
+
+<div>
+  {% include question2.md %}
+</div>
 
 <hr>
 
