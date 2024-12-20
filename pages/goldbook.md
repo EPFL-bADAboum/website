@@ -4,8 +4,6 @@ title: "Statistical GoldBook"
 permalink: /goldbook/
 ---
 
-# Statistical GoldBook
-
 ## Pearson correlation
 
 <div class="stat-item">
