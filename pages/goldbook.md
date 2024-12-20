@@ -14,7 +14,11 @@ permalink: /goldbook/
   </div>
   <div class="stat-image">
     <img src="{{ site.baseurl }}/assets/img/goldbook/pearson_correlation.png" alt="Pearson Correlation Example">
-    <figcaption>[Example of Pearson correlations](https://en.wikipedia.org/wiki/Pearson_correlation_coefficient)</figcaption>
+    <figcaption>
+        <a href="https://en.wikipedia.org/wiki/Pearson_correlation_coefficient" target="_blank">
+            Example of Pearson correlations
+        </a>
+    </figcaption>
   </div>
 </div>
 
@@ -26,7 +30,11 @@ permalink: /goldbook/
   </div>
   <div class="stat-image">
     <img src="{{ site.baseurl }}/assets/img/goldbook/spearman_correlation.png" alt="Spearman Correlation Example">
-    <figcaption>[Spearman vs Pearson correlation](https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient)</figcaption>
+    <figcaption>
+    <a href="https://en.wikipedia.org/wiki/Spearman%27s_rank_correlation_coefficient" target="_blank">
+        Spearman vs Pearson correlation
+    </a>
+    </figcaption>
   </div>
 </div>
 
@@ -46,7 +54,11 @@ permalink: /goldbook/
   </div>
   <div class="stat-image">
     <img src="{{ site.baseurl }}/assets/img/goldbook/kolmogorov_smirnov.png" alt="Kolmogorov-Smirnov Test Example">
-    <figcaption>[Two-sample KS statistic: red and blue lines are empirical distributions; black arrow shows the KS value.](https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test)</figcaption>
+    <figcaption>
+    <a href="https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test" target="_blank">
+        Two-sample KS statistic: red and blue lines are empirical distributions; black arrow shows the KS value.
+    </a>
+    </figcaption>
   </div>
 </div>
 
@@ -74,7 +86,11 @@ permalink: /goldbook/
   </div>
   <div class="stat-image">
     <img src="{{ site.baseurl }}/assets/img/goldbook/logistic_regression.png" alt="Logistic Regression Example">
-    <figcaption>[Example of logistic regression](https://fr.wikipedia.org/wiki/R%C3%A9gression_logistique)</figcaption>
+    <figcaption>
+    <a href="https://fr.wikipedia.org/wiki/R%C3%A9gression_logistique" target="_blank">
+        Example of logistic regression
+    </a>
+    </figcaption>
   </div>
 </div>
 
