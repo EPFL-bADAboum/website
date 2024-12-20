@@ -232,7 +232,7 @@ Here’s a 2D visualization of the clusters:
 {% include question1/clusters_2d.html %}
 </div>
 
-Here’s a 2D visualization of the clusters:
+And a 3D visualization:
 
 <div class="plot-container">
 {% include question1/clusters_3d.html %}
