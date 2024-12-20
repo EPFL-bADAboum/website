@@ -42,7 +42,7 @@ permalink: /goldbook/
 
 <div class="stat-item">
   <div class="stat-text">
-    It checks if the averages (means) of two groups are significantly different from each other. It works by comparing the difference between the group means relative to the variation within the groups. If the difference is large compared to the variation, the t-test suggests that the groups are likely different. This tests assumes the data is roughly normaly distributed.
+    It checks if the averages (means) of two groups are significantly different from each other. It works by comparing the difference between the group means relative to the variation within the groups. If the difference is large compared to the variation, the t-test suggests that the groups are likely different. This tests assumes the data is roughly normaly distributed. You can learn more about it <a href="https://fr.wikipedia.org/wiki/Test_de_Student#:~:text=En%20statistique%2C%20un%20test%20de,l'hypoth%C3%A8se%20nulle%20est%20vraie.&text=R%C3%A9gions%20de%20rejet%20au%20niveau,%C3%A0%207%20degr%C3%A9s%20de%20libert%C3%A9.">here</a>.
   </div>
 </div>
 
@@ -66,7 +66,8 @@ permalink: /goldbook/
 
 <div class="stat-item">
   <div class="stat-text">
-    This regression finds the best-fitting line through data points by minimizing the distance between observed and predicted values. It works by adjusting the line to reduce the sum of squared errors. It assumes a linear relationship, constant variance of errors, and normally distributed residuals. You can find more [here](https://en.wikipedia.org/wiki/Ordinary_least_squares).
+    This regression finds the best-fitting line through data points by minimizing the distance between observed and predicted values. It works by adjusting the line to reduce the sum of squared errors. It assumes a linear relationship, constant variance of errors, and normally distributed residuals. You can find more 
+    <a href="https://en.wikipedia.org/wiki/Ordinary_least_squares">here</a>.
   </div>
 </div>
 
@@ -74,7 +75,7 @@ permalink: /goldbook/
 
 <div class="stat-item">
   <div class="stat-text">
-    This model extends OLS by handling situations where data points have different variances or are correlated. It adjusts the model to account for these issues and gives more accurate estimates. It is particularly useful in time series, where observations are often dependent or have unequal variability. You can find more [here](https://en.wikipedia.org/wiki/Generalized_least_squares).
+    This model extends OLS by handling situations where data points have different variances or are correlated. It adjusts the model to account for these issues and gives more accurate estimates. It is particularly useful in time series, where observations are often dependent or have unequal variability. You can find more <a href="https://en.wikipedia.org/wiki/Generalized_least_squares">here</a>.
   </div>
 </div>
 
@@ -98,7 +99,7 @@ permalink: /goldbook/
 
 <div class="stat-item">
   <div class="stat-text">
-    This method pairs individuals from two groups (e.g., treated and control) based on similar characteristics. It first calculates a score that predicts the likelihood of being in one group based on observed variables. By matching individuals with similar scores, we create comparable groups and reduce the bias when estimating the treatment effects. You can find more [here](https://en.wikipedia.org/wiki/Propensity_score_matching).
+    This method pairs individuals from two groups (e.g., treated and control) based on similar characteristics. It first calculates a score that predicts the likelihood of being in one group based on observed variables. By matching individuals with similar scores, we create comparable groups and reduce the bias when estimating the treatment effects. You can find more <a href="https://en.wikipedia.org/wiki/Propensity_score_matching">here</a>.
   </div>
 </div>
 
@@ -106,6 +107,5 @@ permalink: /goldbook/
 
 <div class="stat-item">
   <div class="stat-text">
-    This method reduces the number of dimensions by combining variables that explain the most variance in the data. The first principal component captures the largest amount of variance, followed by the second, and so on. This simplifies the dataset while preserving its most important information. You can learn more [here](https://en.wikipedia.org/wiki/Principal_component_analysis).
-  </div>
+    This method reduces the number of dimensions by combining variables that explain the most variance in the data. The first principal component captures the largest amount of variance, followed by the second, and so on. This simplifies the dataset while preserving its most important information. You can learn more <a href="https://en.wikipedia.org/wiki/Principal_component_analysis">here</a>.
 </div>
