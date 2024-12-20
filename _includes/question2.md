@@ -44,7 +44,7 @@ Yes! let's do the two-sample Kolmogorov-Smirnov test, which compares the underly
     <thead>
       <tr style="background-color: #2C303A; color: #FFFFFF;">
         <th style="border: 1px solid #444; padding: 10px;"> </th>
-        <th style="border: 1px solid #444; padding: 10px;">P-value</th>
+        <th style="border: 1px solid #444; padding: 10px;">p-value</th>
         <th style="border: 1px solid #444; padding: 10px;">KS-statistic</th>
       </tr>
     </thead>
@@ -77,7 +77,7 @@ This suggest that there is a significant difference between the distributions, r
 
 <h4> Non-winners </h4>
 
-It seems that the difference between the distributions is less significant in this case, as suggested by the KS test. The test indicates that we cannot reject the null hypothesis (P-Value bigger that 0.05), meaning we cannot confirm that the distributions for positive and negative reviews are different.
+It seems that the difference between the distributions is less significant in this case, as suggested by the KS test. The test indicates that we cannot reject the null hypothesis (p-value bigger that 0.05), meaning we cannot confirm that the distributions for positive and negative reviews are different.
 
 <br>
 

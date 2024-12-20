@@ -9,7 +9,7 @@
 
 
 Not too fast Oscaro, we will analyze this question using data.
-To estimate how popular someone was at the year of the given oscar ceremony, we set a 'high profile score' as the mean of all the box office revenue the person has participated in before the oscar ceremony. Let's start with directors.
+To estimate how popular someone was at the year of the given Oscar ceremony, we set a 'high profile score' as the mean of all the box office revenue the person has participated in before the Oscar ceremony. Let's start with directors.
 
 <h3> Directors </h3>
 
@@ -101,7 +101,7 @@ We will restrict our analysis by matching winning Oscar and non-winning Oscar mo
 
 <br>
 
-On average the Oscar-winning movies get an average rating of \(7.91\), while the other nominated movies get an average rating of \(7.55\). Moreover, the mean difference between each pair of movie with similar profile score is \(0.25\). Thus, at similar profile score, movies that won an oscar get \(0.25\) higher rating.
+On average the Oscar-winning movies get an average rating of \(7.91\), while the other nominated movies get an average rating of \(7.55\). Moreover, the mean difference between each pair of movie with similar profile score is \(0.25\). Thus, at similar profile score, movies that won an Oscar get \(0.25\) higher rating.
 
 <div class="quote-container">
     <div class="quote-bubble">
@@ -115,7 +115,7 @@ On average the Oscar-winning movies get an average rating of \(7.91\), while the
 
 <h3> Actors </h3>
 
-We will now conduct the same analysis steps but for actors. We could expect to see an inverse phenomenon: the audience might be biased towards their favorite actors and give good ratings even if the jury does not consider that the movie deserves an oscar. In fact, an actor is more prone to familiarize an audience as he directly appears in the movie and generates more emotion.
+We will now conduct the same analysis steps but for actors. We could expect to see an inverse phenomenon: the audience might be biased towards their favorite actors and give good ratings even if the jury does not consider that the movie deserves an Oscar. In fact, an actor is more prone to familiarize an audience as he directly appears in the movie and generates more emotion.
 
 <br>
 
@@ -183,7 +183,7 @@ Last but not least, what do we observe after performing our propensity score mat
 
 <br>
 
-This time, we get a p-value of \(0.066\). Despite being low, it showcases that the distribution are similar as we can see on the plot. This could indicate a slight bias on the side of the audience: the lack of difference highlights that the jury is able to draw a difference between a movie that deserves an oscar and movies that do not but the audience does not as people can give a good rating just because an actor that they like played in the movie.
+This time, we get a p-value of \(0.066\). Despite being low, it showcases that the distribution are similar as we can see on the plot. This could indicate a slight bias on the side of the audience: the lack of difference highlights that the jury is able to draw a difference between a movie that deserves an Oscar and movies that do not but the audience does not as people can give a good rating just because an actor that they like played in the movie.
 
 <br>
 

@@ -1,12 +1,12 @@
-So, do you think that if your favorite movie gets an oscar, it will get to the top ratings ?
+So, do you think that if your favorite movie gets an Oscar, it will get to the top ratings ?
 Well, let's find out !
-But before going deep into the analysis, let's start simple, let's see how the ratings are distributed between oscar winners and nominees.
+But before going deep into the analysis, let's start simple, let's see how the ratings are distributed between Oscar winners and nominees.
 
 <div class="plot-container">
   {% include question1/boxplot.html %}
 </div>
 
-Interesting, we see that the winners seems to have a higher ratings.
+Interesting, we see that the winners seems to have higher ratings.
 
 <div class="quote-container">
     <div class="quote-bubble">
@@ -24,7 +24,7 @@ Well, go check in our <a href="/website/goldbook/">Goldbook of Statistical Tools
 
 Running our t-test, we get a p-value less than \(1\cdot10^{-47}\).
 This is very small and indeed indicates that the distributions are statistically different.
-Thus, winning an oscar makes an impact !
+Thus, winning an Oscar makes an impact !
 
 <div class="quote-container">
     <div class="quote-bubble">
@@ -35,7 +35,7 @@ Thus, winning an oscar makes an impact !
 </div>
 
 Let's not stop in a such good path.
-Now that we know oscars have an impact, let's estimate it with numbers.
+Now that we know Oscars have an impact, let's estimate it with numbers.
 But first, let's be a little careful.
 
 <div class="quote-container">
@@ -103,7 +103,7 @@ Another key factor to consider is a movie's popularity, specifically its number 
   {% include question1/scatter_numVotes_vs_averageRating.html %}
 </div>
 
-By using a logarithmic scale, we observe that the number of votes and average ratings appear to be correlated in a non-linear way. To verify this relationship, we compute the Pearson and Spearman correlation. This respectively yield the values of approximately \(43.0\%\) and \(59.4\%\). We notice that the Spearman correlation is greater than the Pearson one indicating that the relationship between the number of votes and average ratings is indeed likely non-linear.
+By using a logarithmic scale, we observe that the number of votes and average ratings appear to be correlated in a non-linear way. To verify this relationship, we compute the Pearson and Spearman correlation. This respectively yields the values of approximately \(43.0\%\) and \(59.4\%\). We notice that the Spearman correlation is greater than the Pearson one indicating that the relationship between the number of votes and average ratings is indeed likely non-linear.
 
 To quantify this relationship, we perform an OLS regression of average ratings on the logarithm of the number of votes. The regression yields a coefficient of \(0.1826\) with an almost null p-value, indicating statistical significance.
 

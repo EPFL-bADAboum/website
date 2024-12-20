@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Oscars of FlOpscars
+title: Oscars or FlOpscars
 feature-img: "assets/img/golden_statue.png"
 hide: true
 ---
 
-# Do the Academy Awards Reflect Audience Taste? Oscar winners vs user's ratings
+# Do the Academy Awards Reflect Audience Taste? Oscar winners vs users' ratings
 
 Are you sad that your favorite movie did not win an Oscar?
 
@@ -47,6 +47,8 @@ The data we are working on comes from several datasets:
 - The IMDB dataset
 - Oscar winners and nominees for each year
 
+Throughout this story, we will consider IMDB ratings which range from 1 to 10.
+
 ---
 
 ## Do Oscar-winning films generally have higher ratings compared to non-winning nominees ?
@@ -56,6 +58,23 @@ The data we are working on comes from several datasets:
 </div>
 
 ---
+## Does winning an Oscar lead to a measurable increase in ratings or review counts (i.e., the "Oscar bump")?
+
+<div class="quote-container">
+    <div class="quote-bubble">
+        "I'm sure that people only like a movie because it won an Oscar!"
+        <div class="quote-tail"></div>
+    </div>
+    <img src="assets/img/person.png" alt="Person saying the quote" class="quote-image">
+</div>
+
+Well my friend, let's see.
+
+<div>
+  {% include question5.md %}
+</div>
+
+<hr>
 
 ## Are there discernible biases within Oscar winners, such as genre, nationality, or star power, that differ from audience preferences?
 
@@ -64,8 +83,6 @@ However as we have seen in the introduction, the nomination and voting is done b
 <div>
   {% include question6.md %}
 </div>
-
-### What does it take to be nominated as best picture?
 
 ---
 
@@ -86,24 +103,6 @@ Do you really need to make a great movie if Leonardo Di Caprio plays in it? Or i
 </div>
 
 ---
-
-## Does winning an Oscar lead to a measurable increase in ratings or review counts (i.e., the "Oscar bump")?
-
-<div class="quote-container">
-    <div class="quote-bubble">
-        "I'm sure that people only like a movie because it won an Oscar!"
-        <div class="quote-tail"></div>
-    </div>
-    <img src="assets/img/person.png" alt="Person saying the quote" class="quote-image">
-</div>
-
-Well my friend, let's see.
-
-<div>
-  {% include question5.md %}
-</div>
-
-<hr>
 
 <h2> How do ratings of Oscar-winning films evolve over time? </h2>
 
