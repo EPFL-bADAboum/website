@@ -9,15 +9,15 @@ This is bADAboum team's datastory. We are here to present to you explosive resul
 
 Team members:
 
-Camille Lannoye: Producer
+Camille Lannoye: Prof. Maria Brbić's Impresario
 
-Matya Aydin: The Pixar Lamp
+Matya Aydin: Prof. Maria Brbić's Script supervisor
 
 Quentin Sandoz: Prof. Maria Brbić's Stuntman
 
 Sophia Kovalenko: Prof. Maria Brbić's Make-Up Artist
 
-Yoann Lafore: 
+Yoann Lafore: Prof. Maria Brbić's Acting coach
 
  
 Created for the CS-401 course, Applied Data Analysis (ADA)

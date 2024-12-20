@@ -4,7 +4,7 @@
         "I always see the same faces at the ceremony, the jury is for sure biased!"
         <div class="quote-tail"></div>
     </div>
-    <img src="assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
 
@@ -47,7 +47,7 @@ As we can see, we can observe some names in common depending on the year, like C
         "Exactly, I'm sure that we will find a bias!"
         <div class="quote-tail"></div>
     </div>
-    <img src="assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
 
@@ -61,11 +61,11 @@ If each year, we sort the nominees by average ratings and by 'high profile score
 
 <div style="width: 100%; display: flex; justify-content: center; margin-top: 20px; margin-bottom: -10px; padding: 0;">
   <iframe 
-    src="question3_plots/winner_position.png" 
+    src="{{ site.baseurl }}/question3_plots/winner_position.png" 
     style="width: 100%; max-width: 800px; height: 500px; border: none; margin: 0; padding: 0;"
     scrolling="no">
     Your browser does not support PNGs. 
-    <a href="question3_plots/winner_position.png">Download the PNG</a>.
+    <a href="{{ site.baseurl }}/question3_plots/winner_position.png">Download the PNG</a>.
   </iframe>
 </div>
 
@@ -78,7 +78,7 @@ To reinforce our intuition, we can perform a statistical test to decide whether 
         "Nice statistical black box method, but there are obviously way less Oscar-winning movies than there are movies overall. What if you take this into account?"
         <div class="quote-tail"></div>
     </div>
-    <img src="assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
 Nice catch! If only there was a statistical method that could prevent that... Let's see in our ADA toolbox... Propensity score matching could help! Let's use it!
@@ -91,11 +91,11 @@ We will restrict our analysis by matching winning Oscar and non-winning Oscar mo
 
 <div style="width: 100%; display: flex; justify-content: center; margin-top: 20px; margin-bottom: -10px; padding: 0;">
   <iframe 
-    src="question3_plots/match_and_plot.png" 
+    src="{{ site.baseurl }}/question3_plots/match_and_plot.png" 
     style="width: 100%; max-width: 800px; height: 500px; border: none; margin: 0; padding: 0;"
     scrolling="no">
     Your browser does not support PNGs. 
-    <a href="question3_plots/match_and_plot.png">Download the PNG</a>.
+    <a href="{{ site.baseurl }}/question3_plots/match_and_plot.png">Download the PNG</a>.
   </iframe>
 </div>
 
@@ -108,7 +108,7 @@ On average the Oscar-winning movies get an average rating of \(7.91\), while the
         "OK, you got me this time, but what about actors?"
         <div class="quote-tail"></div>
     </div>
-    <img src="assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
 <hr>
@@ -121,11 +121,11 @@ We will now conduct the same analysis steps but for actors. We could expect to s
 
 <div style="width: 100%; display: flex; justify-content: center; margin-top: 20px; margin-bottom: -10px; padding: 0;">
   <iframe 
-    src="question3_plots/top_actors.png" 
+    src="{{ site.baseurl }}/question3_plots/top_actors.png" 
     style="width: 100%; max-width: 800px; height: 500px; border: none; margin:0px; padding: 0;"
     scrolling="no">
     Your browser does not support PNGs. 
-    <a href="question3_plots/top_actors.png">Download the PNG</a>.
+    <a href="{{ site.baseurl }}/question3_plots/top_actors.png">Download the PNG</a>.
   </iframe>
 </div>
 
@@ -153,11 +153,11 @@ No name in common... What about the ranking ?
 
 <div style="width: 100%; display: flex; justify-content: center; margin-top: 20px; margin-bottom: -10px; padding: 0;">
   <iframe 
-    src="question3_plots/winner_position_actors.png" 
+    src="{{ site.baseurl }}/question3_plots/winner_position_actors.png" 
     style="width: 100%; max-width: 800px; height: 500px; border: none; margin: 0; padding: 0;"
     scrolling="no">
     Your browser does not support PNGs. 
-    <a href="question3_plots/winner_position_actors.png">Download the PNG</a>.
+    <a href="{{ site.baseurl }}/question3_plots/winner_position_actors.png">Download the PNG</a>.
   </iframe>
 </div>
 
@@ -173,11 +173,11 @@ Last but not least, what do we observe after performing our propensity score mat
 
 <div style="width: 100%; display: flex; justify-content: center; margin-top: 20px; margin-bottom: -10px; padding: 0;">
   <iframe 
-    src="question3_plots/match_and_plot_actor.png" 
+    src="{{ site.baseurl }}/question3_plots/match_and_plot_actor.png" 
     style="width: 100%; max-width: 800px; height: 500px; border: none; margin: 0; padding: 0;"
     scrolling="no">
     Your browser does not support PNGs. 
-    <a href="question3_plots/match_and_plot_actor.png">Download the PNG</a>.
+    <a href="{{ site.baseurl }}/question3_plots/match_and_plot_actor.png">Download the PNG</a>.
   </iframe>
 </div>
 
@@ -199,7 +199,7 @@ We were looking for a bias in the jury but instead, it seems like we found a bia
         "Damn what a plot twist, you should make a movie out of this, it might win you an Oscar! But wait, the jury who nominates is the same as the one who decides who wins the Oscar, so what if the jury's bias was already present in the nomination?"
         <div class="quote-tail"></div>
     </div>
-    <img src="assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
 Very good remark golden boy, let's find out for both directors and actors!
@@ -208,28 +208,28 @@ Very good remark golden boy, let's find out for both directors and actors!
 
 <div style="width: 100%; display: flex; justify-content: center; margin-top: 20px; margin-bottom: -10px; padding: 0;">
   <iframe 
-    src="question3_plots/match_and_plot_nominated.png" 
+    src="{{ site.baseurl }}/question3_plots/match_and_plot_nominated.png" 
     style="width: 100%; max-width: 800px; height: 500px; border: none; margin: 0; padding: 0;"
     scrolling="no">
     Your browser does not support PNGs. 
-    <a href="question3_plots/match_and_plot_nominated.png">Download the PNG</a>.
+    <a href="{{ site.baseurl }}/question3_plots/match_and_plot_nominated.png">Download the PNG</a>.
   </iframe>
 </div>
 
 
 <div style="width: 100%; display: flex; justify-content: center; margin-top: 20px; margin-bottom: -10px; padding: 0;">
   <iframe 
-    src="question3_plots/match_and_plot_nominated_actor.png" 
+    src="{{ site.baseurl }}/question3_plots/match_and_plot_nominated_actor.png" 
     style="width: 100%; max-width: 800px; height: 500px; border: none; margin: 0; padding: 0;"
     scrolling="no">
     Your browser does not support PNGs. 
-    <a href="question3_plots/match_and_plot_nominated_actor.png">Download the PNG</a>.
+    <a href="{{ site.baseurl }}/question3_plots/match_and_plot_nominated_actor.png">Download the PNG</a>.
   </iframe>
 </div>
 
 <br>
 
-After matching on both actors and directors, we see that, even with similar profile scores, the movies that are not nominated have lower ratings on average. This gap is more pronounced than the one we observed among the nominated movies as the average difference between two pairs is 1.13
+After matching on both actors and directors, we see that, even with similar profile scores, the movies that are not nominated have lower ratings on average. This gap is more pronounced than the one we observed among the nominated movies as the average difference between two pairs is \(1.13\)
 
 <br>
 
@@ -241,5 +241,5 @@ This confirms that the jury is not biased for both nominating and choosing the w
         "I guess I'll agree with the data supremacy..."
         <div class="quote-tail"></div>
     </div>
-    <img src="assets/img/person.png" alt="Person saying the quote" class="quote-image">
+    <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>

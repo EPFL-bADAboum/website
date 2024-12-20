@@ -5,7 +5,7 @@ feature-img: "assets/img/golden_statue.png"
 hide: true
 ---
 
-# Do the Academy Awards Reflect Audience Taste? Oscar's winners vs user's ratings
+# Do the Academy Awards Reflect Audience Taste? Oscar winners vs user's ratings
 
 Are you sad that your favorite movie did not win an Oscar? 
 
@@ -58,13 +58,13 @@ The data we are working on comes from several datasets:
 
 * * *
 
-## Are there discernible biases within Oscar winners, such as genre, nationality, or star power, that differ from audience preferences? (Q6)
+## Are there discernible biases within Oscar winners, such as genre, nationality, or star power, that differ from audience preferences? 
 
 However as we have seen in the introduction, the nomination and voting is done by the same members. Thus the critic's bias may already be in the nomination. We will now compare the nominated movies with movies that were not.
 
-<br>
-
-We know that the Academy Awards are USA-centric. 
+<div>
+  {% include question6.md %}
+</div>
 
 ### What does it take to be nominated as best picture?
 

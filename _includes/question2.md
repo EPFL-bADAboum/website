@@ -85,7 +85,7 @@ Although the plot shows a small spike in positive reviews, similar to the previo
 
 <h4> Winners </h4>
 
-For the winning movies, the KS test yields a p-value of 0.011. Unlike the case with losing movies, this result indicates that we can reject the null hypothesis at a 5% significance level, suggesting that the distributions of positive and negative reviews for winning movies are significantly different.
+For the winning movies, the KS test yields a p-value of \(0.011\). Unlike the case with losing movies, this result indicates that we can reject the null hypothesis at a 5% significance level, suggesting that the distributions of positive and negative reviews for winning movies are significantly different.
 
 <br>
 
