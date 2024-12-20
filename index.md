@@ -41,6 +41,9 @@ All active members in the Academy can vote for all of the categories. They must 
 
 In this story, we will see if there is a big difference between the people's ratings and Oscar awards. We will also see if there is a recipe to success among the Academy Awards.
 
+## The data we have
+
+
 * * *
 
 ## Do Oscar-winning films generally have higher ratings compared to non-winning nominees and top box-office hits?
@@ -63,7 +66,7 @@ We know that the Academy Awards are USA-centric.
 
 * * *
 
-## Is there a correlation between high-profile actors/directors and Oscar wins, regardless of ratings? (Q3)
+## Is there a correlation between high-profile actors/directors and Oscar wins, regardless of ratings? 
 
 <div class="quote-container">
     <div class="quote-bubble">
@@ -75,6 +78,10 @@ We know that the Academy Awards are USA-centric.
 
 
 Do you really need to make a great movie if Leonardo Di Caprio plays in it? Or if Quentin Tarantino directed it? Let's see if the jury is biased towards some members!
+
+<div>
+  {% include question3.md %}
+</div>
 
 * * *
 
