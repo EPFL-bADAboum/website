@@ -57,7 +57,7 @@ The data we are working on comes from several datasets:
 
 ---
 
-## Are there discernible biases within Oscar winners, such as genre, nationality, or star power, that differ from audience preferences? 
+## Are there discernible biases within Oscar winners, such as genre, nationality, or star power, that differ from audience preferences?
 
 However as we have seen in the introduction, the nomination and voting is done by the same members. Thus the critic's bias may already be in the nomination. We will now compare the nominated movies with movies that were not.
 
@@ -119,9 +119,10 @@ We will see how the sentiment of the reviews evolves over the time after the Osc
 
 <h2> Conclusion </h2>
 
-In this project, we have explorated the factors influencing the success of films in the Academy Awards, commonly known as the Oscars. 
+In the end, the Oscars don’t just reflect audience taste, they shape it in subtle ways. Winning an Oscar nudges a movie’s ratings upward, and certain categories like Special Effects give an even bigger punch. But it’s not so simple: ratings naturally drift higher over time as audience biases shift, and popular films do well regardless of awards. Around nominations and the ceremony, hype surges and opinions polarize, but this excitement gradually fades, with even winners eventually blending back into the broader cinematic landscape. The Oscars guide where people look, but in the long run, the audience still carves its own path, reminding us that what truly lasts in cinema isn’t just who takes home the statuette, but who keeps winning over our hearts.
 
 Oscaro and the bADAboum team wish you happy holidays!
+
 <div class="quote-container">
     <div class="quote-bubble">
         "Cheers !"
