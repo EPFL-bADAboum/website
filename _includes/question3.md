@@ -20,19 +20,26 @@ As a quick check, do we see the same names when displaying the directors with th
   {% include question3/director_interactive.html %}
 </div>
 
-<div style="width: 100%; display: flex; justify-content: center; margin-top: 20px; margin-bottom: -10px; padding: 0;">
-  <iframe 
-    src="question3_plots/count_won_oscar.png" 
-    style="width: 100%; max-width: 800px; height: 500px; border: none; margin:0 ; padding: 0;"
-    scrolling="no">
-    Your browser does not support PNGs. 
-    <a href="question3_plots/count_won_oscar.png">Download the PNG</a>.
-  </iframe>
-</div>
+<h5> Number of directors who won Oscars </h5>
+
+<ul>
+  <li> 0 Oscars: 111 directors </li>
+  <li> 1 Oscar: 40 directors </li>
+  <li> 2 Oscar: 3 directors </li>
+</ul>
+
+
+<h5> Directors who won 2 Oscars: </h5>
+
+<ul>
+  <li> Clint Eastwood </li>
+  <li> Francis Ford Coppola </li>
+  <li> Vincente Minnelli </li>
+</ul>
 
 <br>
 
-As we can see, we do not observe any name in common but it is too early to draw any conclusion.
+As we can see, we can observe some names in common depending on the year, like Coppola who was in the top in 1989. But it is too early to draw any conclusion.
 
 
 <div class="quote-container">
@@ -122,19 +129,25 @@ We will now conduct the same analysis steps but for actors. We could expect to s
   </iframe>
 </div>
 
-<div style="width: 100%; display: flex; justify-content: center; margin-top: 20px; margin-bottom: -10px; padding: 0;">
-  <iframe 
-    src="question3_plots/count_won_oscar_actor.png" 
-    style="width: 100%; max-width: 800px; height: 500px; border: none; margin: 0; padding: 0;"
-    scrolling="no">
-    Your browser does not support PNGs. 
-    <a href="question3_plots/count_won_oscar_actor.png">Download the PNG</a>.
-  </iframe>
-</div>
+<h5> Number of actors who won Oscars </h5>
+<ul>
+  <li> 0 Oscars: 18'892 actors </li>
+  <li> 1 Oscar: 806 actors </li>
+  <li> 2 Oscar: 41 actors </li>
+  <li> 3 Oscar: 2 actors </li>
+</ul>
+
+
+<h5> Actors that won 3 Oscars: </h5>
+
+<ul>
+  <li> Kenneth Utt </li>
+  <li> Peter Dukelow </li>
+</ul>
 
 <br>
 
-Again, no name in common... What about the ranking ?
+No name in common... What about the ranking ?
 
 <br>
 

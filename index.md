@@ -42,7 +42,11 @@ All active members in the Academy can vote for all of the categories. They must 
 In this story, we will see if there is a big difference between the people's ratings and Oscar awards. We will also see if there is a recipe to success among the Academy Awards.
 
 ## The data we have
+The data we are working on comes from several datasets:
 
+- The CMU dataset
+- The IMDB dataset
+- Oscar winners and nominees for each year
 
 * * *
 
