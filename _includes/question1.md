@@ -1,13 +1,10 @@
-
-So, do you think that if your favorite movie gets an oscar, it will get to the top ratings ? 
+So, do you think that if your favorite movie gets an oscar, it will get to the top ratings ?
 Well, let's find out !
 But before going deep into the analysis, let's start simple, let's see how the ratings are distributed between oscar winners and nominees.
-
 
 <div class="plot-container">
   {% include question1/boxplot.html %}
 </div>
-
 
 Interesting, we see that the winners seems to have a higher ratings.
 
@@ -19,11 +16,10 @@ Interesting, we see that the winners seems to have a higher ratings.
     <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
-
-
 Well well, not that fast. While those results are encouraging, we still need to see if they are significant !
-To do so, we'll use a simple t-test and see if the distribution are different. What's a t-test you ask ? 
-Well, go check in our goldbook of statistical tools (*Put ref here*).
+To do so, we'll use a simple t-test and see if the distribution are different. What's a t-test you ask ?
+Well, go check in our <a href="/goldbook">Goldbook of Statistical Tools</a>.
+
 <!-- On peut éventuellement faire ue sorte de "libre d'or" de nos méthodes stats, mais à voir avec les autres -->
 
 Running our t-test, we get a p-value less than \(1\cdot10^{-47}\).
@@ -38,11 +34,9 @@ Thus, winning an oscar makes an impact !
     <img src="{{ site.baseurl }}/assets/img/person.png" alt="Person saying the quote" class="quote-image">
 </div>
 
-
 Let's not stop in a such good path.
 Now that we know oscars have an impact, let's estimate it with numbers.
 But first, let's be a little careful.
-
 
 <div class="quote-container">
     <div class="quote-bubble">
@@ -54,9 +48,8 @@ But first, let's be a little careful.
 
 Well, you see, humans are very complex creatures and they might not treat all movies the same way, they might be biased.
 For instance, maybe that they have nostalgia for older movies and that they will naturally judge them less severly than todays movies (and vice-versa).
-Also, not all movies are popular and the number of votes mights influence the ratings. 
+Also, not all movies are popular and the number of votes mights influence the ratings.
 We must take that into account.
-
 
 <div class="quote-container">
     <div class="quote-bubble">
@@ -74,11 +67,9 @@ You're right to ask, let's check our data !
 
 Let's start with the big picture and check the distributions over the decades.
 
-
 <div class="plot-container">
   {% include question1/rating_decades_box.html %}
 </div>
-
 
 We already see that something seems to be going on here and that ratings seems to naturally increase over the years.
 Now, let's validate this with data !
@@ -86,16 +77,13 @@ Now, let's validate this with data !
 To do so, we perform an OLS regression of the average ratings on the release year.
 This should help us quantify the evolution of ratings over the years.
 
-
 <div class="plot-container">
   {% include question1/rating_years_scatter.html %}
 </div>
 
-
 The OLS regression yields a coefficient of \(0.0085 \pm 0.001\) with a p-value of \(0.0\), indicating that the coefficient is statistically significant. This suggests that, on average, a movie's rating increases by \(0.0085\) for each more recent release year.
 
 A possible explanation for this trend is that IMDb ratings are relatively recent, with the official website launching in 1990. As a result, the majority of users providing ratings may be more familiar with or emotionally connected to movies released closer to their own time, potentially leading to higher ratings for more recent films.
-
 
 <div class="quote-container">
     <div class="quote-bubble">
@@ -111,18 +99,15 @@ A possible explanation for this trend is that IMDb ratings are relatively recent
 
 Another key factor to consider is a movie's popularity, specifically its number of votes. Popular movies are likely to receive higher ratings due to broader exposure and greater audience engagement.
 
-
 <div class="plot-container">
   {% include question1/scatter_numVotes_vs_averageRating.html %}
 </div>
-
 
 By using a logarithmic scale, we observe that the number of votes and average ratings appear to be correlated in a non-linear way. To verify this relationship, we compute the Spearman correlation, yielding a value of approximately \(59.4\%\), supporting the existence of a non-linear association.
 
 To quantify this relationship, we perform an OLS regression of average ratings on the logarithm of the number of votes. The regression yields a coefficient of \(0.1826\) with an almost null p-value, indicating statistical significance.
 
 What does this mean in practical terms? It implies that, on average, for every \(1\%\) increase in the number of votes, a movie's average rating increases by approximately \(0.0018\) units.
-
 
 <div class="quote-container">
     <div class="quote-bubble">
@@ -148,9 +133,7 @@ The regression yields a coefficient of \(0.2144\) for winning an Oscar, with a n
 
 Let’s explore the relationship between the number of Oscars won and average ratings. Intuitively, winning more Oscars should correlate with higher ratings. Let's check that.
 
-
 <div class="plot-container"> {% include question1/nb_oscars_boxplot.html %} </div>
-
 
 As expected, the results confirm this trend: movies with more Oscars tend to have higher average ratings.
 
@@ -206,9 +189,7 @@ Not quite. A few additional considerations are essential:
 
 With these constraints, we narrow down to a select few categories where causal effects can be reliably calculated.
 
-
 <div class="plot-container"> {% include question1/raw_causal_effects_bar.html %} </div>
-
 
 Despite these limitations, the results are already revealing. For example, winning an Oscar in Special Effects appears to have the largest impact on average ratings, with an Average Treatment Effect (ATE) of approximately \(0.53\).
 
@@ -226,7 +207,7 @@ Despite these limitations, the results are already revealing. For example, winni
 
 Great idea! Our dataset contains 59 categories with at least 10 entries, and some of them are indeed similar. For example, we could group the Actor and Actress categories under a broader Acting category. By pooling data, we could compute more robust causal effects.
 
-To achieve this, we apply the k-means algorithm. First, we embed the categories into vectors and then perform clustering. Given the relatively small sample size (59), we manually select the optimal number of clusters, determining it to be \(k_{optimal} = 12\).
+To achieve this, we apply the k-means algorithm. First, we embed the categories into vectors and then perform clustering. Given the relatively small sample size (59), we manually select the optimal number of clusters, determining it to be \(k\_{optimal} = 12\).
 
 <br>
 
@@ -246,7 +227,6 @@ Good question! We visualize the clusters by reducing the embedded vectors to two
 
 Here’s a 2D and 3D visualization of the clusters:
 
-
 <div class="side-by-side-plots">
   <div class="plot-container">
     {% include question1/clusters_2d.html %}
@@ -257,7 +237,6 @@ Here’s a 2D and 3D visualization of the clusters:
   </div>
 </div>
 
-
 It’s worth noting that clusters might look scrambled in these graphs. This is because k-means clustering was performed in the higher-dimensional space, and dimensionality reduction can distort the visual representation. Rest assured, the clusters remain valid in their original space.
 
 <hr>
@@ -266,16 +245,13 @@ It’s worth noting that clusters might look scrambled in these graphs. This is 
 
 With broader categories established, we can perform a similar causal analysis. Here are the updated results:
 
-
 <div class="plot-container"> {% include question1/new_causal_effects_bar.html %} </div>
-
 
 As expected, Effects remains the most influential category, consistent with our previous findings. Interestingly, we now see that Cinematography and Sound also have a notable impact on average ratings. While Writing has a positive effect, its influence is nearly half that of the top categories.
 
 These insights suggest that audiences seem to value the sensory aspects of movies (visual and sound effects) more than the story itself.
 
 On a side note, we still lack enough samples to estimate a robust causal effect for the Best Picture category. This is because Best Picture wins are rarely standalone and are often accompanied by wins in other categories. Due to our pipeline’s restrictions, we cannot compute a meaningful effect for these cases.
-
 
 <div class="quote-container">
     <div class="quote-bubble">
